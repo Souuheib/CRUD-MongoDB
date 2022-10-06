@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+</head>
+<body>
+    <h1>Name is <%=student.name%></h1>
+    <h2> Family name is <%=student.surname%> </h2>
+    <h2> <%=student.age%> </h2>
+
+    <a class="" href="/students/<%=student._id %>/edit">edit</a>
+    <form class="" action="/students/<%=student._id%>?_method=DELETE" method="POST">
+        <button>delete</button>
+        </form>
+    <footer>
+        <a href="/students">All students</a>
+    </footer>
+</body>
+</html>
